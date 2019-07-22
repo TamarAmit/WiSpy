@@ -1,0 +1,12 @@
+#video {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.video-container {
+    min-width: 390px;
+    max-width: 390px;
+    height: 308px;
+}
