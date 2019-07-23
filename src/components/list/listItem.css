@@ -1,8 +1,16 @@
+.list {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 14px;
+    margin-left: 17px;
+}
+
 .list-item {
     display: flex;
     flex-flow: row nowrap;
     height: 50px;
-    margin: 0 14px 12px 17px;
+    margin-top: 0;
+    margin-bottom: 12px;
     background-color: #26313c;
     direction: rtl;
     justify-content: space-between;
@@ -64,8 +72,75 @@
     cursor: pointer;
 }
 
-.visualizer-image {
+.visualizer-image, .sound-image {
     display: none;
-    margin-right: 14px;
-    margin-left: 17px;
+    position: relative;
+    top: -12px;
+}
+
+.visualizer-image img, .sound-image img {
+    width: 100%;
+}
+
+.context-menu {
+
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 80px;
+    right: 380px;
+    width: 168px;
+    border: solid 1px #797979;
+}
+
+.context-menu .context-menu-item {
+    height: 42px;
+    border-bottom: solid 1px #797979;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.context-menu .context-menu-item:last-child {
+    border-bottom: none;
+}
+
+.context-menu .context-menu-item .icon {
+    height: 100%;
+    width: 30px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.context-menu .context-menu-item .icon.data {
+    background-image: url('pictures/dataTool.png');
+}
+
+.context-menu .context-menu-item .icon.block {
+     background-image: url('pictures/block.png');
+ }
+
+.context-menu .context-menu-item .icon.listening {
+    background-image: url('pictures/listenerExecute.png');
+}
+
+.context-menu .context-menu-item .icon.picture {
+    background-image: url('pictures/putOnPhotography.png');
+}
+
+.context-menu .context-menu-item .icon.diary {
+    background-image: url('pictures/showDiary.png');
+}
+
+.context-menu .context-menu-item .icon.people {
+    background-image: url('pictures/showPeople.png');
+}
+
+.context-menu .context-menu-item .icon.library {
+    background-image: url('pictures/showLibrary.png');
 }
