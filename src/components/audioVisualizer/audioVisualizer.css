@@ -1,0 +1,13 @@
+#visualizer {
+    direction: rtl;
+}
+
+#visualizer .title {
+    height: 38px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}

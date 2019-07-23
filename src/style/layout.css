@@ -2,12 +2,14 @@ html,
 body {
     height: 100%;
     margin: 0;
+    font-family: Arial;
+
 }
 
 #root {
     height: 100%;
     background-color: #0f1319;
-    color: white;
+    color: #5f7f94;
 }
 
 .box {
@@ -44,13 +46,40 @@ body {
     justify-content: space-between;
 }
 
-.footer-inner  {
+.footer-inner {
     height: 170px;
     width: 49%;
+    direction: rtl;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.timeline {
+.footer-inner .title {
+    height: 38px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-inner.timeline .title .text:after {
+    content: '\002B';
+    font-size: 22px;
+    padding-right: 5px;
+}
+
+.footer-inner.timeline .title .time {
+    font-size: 10px;
+    padding-bottom: 3px;
+}
+
+.footer-inner.timeline {
     margin-left: 10px;
+}
+
+.footer-inner img {
+    width: 100%;
 }
 
 .left-area {
@@ -64,7 +93,6 @@ body {
 }
 
 .border {
-    border: 1px solid white;
+    border: 1px solid #4f5052;
     border-radius: 5px;
-    background: #000;
 }

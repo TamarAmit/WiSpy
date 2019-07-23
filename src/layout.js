@@ -22,8 +22,23 @@ class Layout extends Component {
 						</div>
         </div>
 		    <div className="footer">
-            <div className="footer-inner resources border" >Resources</div>
-    			  <div className="footer-inner timeline border">Timeline</div>
+            <div className="footer-inner resources border" >
+							<div className="title">
+								<div className="text">ספריית מדיה</div>
+							</div>
+							<div className="resources-pic">
+								<img src="./pictures.png" />
+							</div>
+						</div>
+    			  <div className="footer-inner timeline border">
+							<div className="title">
+								<div className="text">יומן מבצעים</div>
+								<div className="time">יום שלישי, 22.11.2020</div>
+							</div>
+							<div className="timeline-pic">
+								<img src="./timeline.png" />
+							</div>
+						</div>
 			  </div>
 			</div>
 		)
