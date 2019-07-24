@@ -96,3 +96,18 @@ body {
     border: 1px solid #4f5052;
     border-radius: 5px;
 }
+
+#header {
+
+}
+
+#header .header-icons {
+    float: right;
+    margin-top: 5px;
+}
+
+#header .header-title img {
+    position: absolute;
+    left: 43%;
+    margin-top: -5px;
+}

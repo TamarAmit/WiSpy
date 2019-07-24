@@ -10,7 +10,14 @@ class Layout extends Component {
 	render() {
 		return (
 			<div className="box">
-			  <div className="header">Header</div>
+			  <div id="header">
+					<div className="header-icons">
+						<img src="./topBarIcons.png" />
+					</div>
+					<div className="header-title">
+						<img src="./headerTitle.png" />
+					</div>
+				</div>
         <div className="content">
             <div className="content-inner left-area">
 							<Video/>
