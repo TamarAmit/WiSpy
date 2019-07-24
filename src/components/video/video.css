@@ -1,8 +1,9 @@
 #video {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
     height: 100%;
+}
+
+#video .border {
+    padding: 10px;
 }
 
 #video .border .video-title {
@@ -13,6 +14,10 @@
     align-items: center;
     margin-left: 16px;
     margin-right: 16px;
+}
+
+#video .top-item {
+    margin-bottom: 5px;
 }
 
 #video .border .video-title .time {
