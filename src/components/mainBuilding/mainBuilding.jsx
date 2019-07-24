@@ -1,34 +1,36 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './mainBuilding.css'
 import io from 'socket.io-client';
 
-const socket = io('http://10.20.20.114:3009', {
-	path: '/'
-});
+const socket = io('http://10.20.20.114:3030');
 
-socket.on('message', (data) => {
+socket.on('broadcast', (data) => {
 	console.log(data)
 });
 
 socket.on('connect_error', (error) => {
 	console.log(error)
-})
+});
+
+socket.on('error', (error) => {
+	console.log(error);
+});
 
 class MainBuilding extends Component {
 
 	constructor(props) {
 		super(props);
 		this.state = {manInTheRoomStatus: "unvisible", score: 0};
-		this. myVar  = "a";
+		this.myVar = "a";
 	}
 
 	componentDidMount() {
-		this.timerID = setInterval(() => this.checkManInTheRoomStatus(), 1000);
-		//this.checkManInTheRoomStatus();
+		// this.timerID = setInterval(() => this.checkManInTheRoomStatus(), 1000);
+		this.checkManInTheRoomStatus();
 	}
 
-	checkManInTheRoomStatus(){
-		if("a" === this.myVar ){
+	checkManInTheRoomStatus() {
+		if ("a" === this.myVar) {
 			this.setState({
 				manInTheRoomStatus: "visible",
 				score: 60
@@ -46,13 +48,13 @@ class MainBuilding extends Component {
 	}
 
 	render() {
-		let showHideManClass;
+		let indications;
 		let scoreClass
-		if(this.state.manInTheRoomStatus === "visible") {
-			showHideManClass = "manVisible objVisible";
-			scoreClass = this.state.score > 50 ? "strongVisible objVisible" : "weakVisible objVisible";
+		if (this.state.manInTheRoomStatus === "visible") {
+			indications = "show";
+			scoreClass = this.state.score > 50 ? "green" : "yellow";
 		} else {
-			showHideManClass = "manUnvisible";
+			indications = "hide";
 			scoreClass = "scoreUnvisible";
 		}
 
@@ -60,14 +62,16 @@ class MainBuilding extends Component {
 			<div id="mainBuilding">
 				<div className="building-border">
 					<div className="building-pic">
-						<img src="./mainBuilding.png" />
+						<img src="./mainBuilding.png"/>
 					</div>
-					<div id="manInTheRoom" className={showHideManClass}>
-						<div id="score" className={scoreClass} />
+					<div className={`indication-wrapper ${indications}`}>
+						<div id="manInTheRoom" className={`man`}/>
+						<div id="score" className={`score ${scoreClass}`}/>
 					</div>
 				</div>
 			</div>
-	)}
+		)
+	}
 }
 
 export default MainBuilding
