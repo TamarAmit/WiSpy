@@ -49,13 +49,12 @@ class ListItem extends React.Component {
 				<div className="list-item">
 					<div className="list-item-phone">
 						<div className="list-item-phone-number">
-							<img src="phone.png" />
 							{this.props.phone}
-							<img src="phone.png" />
+							<img src="icon_phoner.png" className="icon-list" />
 						</div>
 						<div className="list-item-phone-icons">
-							<img src="phone.png" onClick={this.openSound} />
-							<img src="phone.png" onClick={this.openVisualizer} />
+							<img src="icon_listen.png" className="icon-list" onClick={this.openVisualizer} />
+							<img src="icon_camera.png" className="icon-list" onClick={this.openSound} />
 						</div>
 					</div>
 					<div className="list-item-plus" onClick={this.openContextMenu} />

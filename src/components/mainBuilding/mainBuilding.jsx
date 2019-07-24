@@ -10,8 +10,8 @@ class MainBuilding extends Component {
 	}
 
 	componentDidMount() {
-		this.timerID = setInterval(() => this.checkManInTheRoomStatus(), 1000);
-		//this.checkManInTheRoomStatus();
+		//this.timerID = setInterval(() => this.checkManInTheRoomStatus(), 1000);
+		this.checkManInTheRoomStatus();
 	}
 
 	checkManInTheRoomStatus(){
