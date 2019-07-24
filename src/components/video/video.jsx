@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import VideoPlayer from '../video-player';
 import './video.css'
 
 class Video extends Component {
@@ -36,13 +37,9 @@ class Video extends Component {
 						<div className="title">שידור חי</div>
 					</div>
 					<div className="video-pic">
-						<img src="./video_img.png" />
-					</div>
-					{/*<video className="video-container" autoPlay={false} loop controls>*/}
-						{/*<source src="./tempVideo.mp4" type="video/mp4" />*/}
-					{/*</video>*/}
-					<div className="video-player">
-						<img src="./under_video.png" />
+						<VideoPlayer
+							url="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+						/>
 					</div>
 				</div>
 			</div>
