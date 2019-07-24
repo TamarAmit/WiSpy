@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     height: 100%;
 }
 
@@ -35,7 +36,7 @@
 
 .manVisible {
     background-image: url('pictures/icon_man2.png');
-    top: 180px;
+    top: 400px;
     right: 380px;
     width: 168px;
     height: 168px;
@@ -51,10 +52,9 @@
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    top: 180px;
-    right: 380px;
     width: 168px;
     height: 168px;
+    top:-8px
 }
 
 .manUnvisible{

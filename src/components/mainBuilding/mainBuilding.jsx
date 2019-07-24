@@ -23,8 +23,8 @@ class MainBuilding extends Component {
 	}
 
 	componentDidMount() {
-		//this.timerID = setInterval(() => this.checkManInTheRoomStatus(), 1000);
-		this.checkManInTheRoomStatus();
+		this.timerID = setInterval(() => this.checkManInTheRoomStatus(), 1000);
+		//this.checkManInTheRoomStatus();
 	}
 
 	checkManInTheRoomStatus(){
@@ -59,13 +59,12 @@ class MainBuilding extends Component {
 		return (
 			<div id="mainBuilding">
 				<div className="building-border">
-					<h2>man status: {this.state.manInTheRoomStatus}.</h2>
 					<div className="building-pic">
 						<img src="./mainBuilding.png" />
 					</div>
 					<div id="manInTheRoom" className={showHideManClass}>
 						<div id="score" className={scoreClass} />
-						</div>
+					</div>
 				</div>
 			</div>
 	)}
