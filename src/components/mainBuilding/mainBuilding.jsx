@@ -1,5 +1,18 @@
 import React, { Component } from 'react';
 import './mainBuilding.css'
+import io from 'socket.io-client';
+
+const socket = io('http://10.20.20.114:3009', {
+	path: '/'
+});
+
+socket.on('message', (data) => {
+	console.log(data)
+});
+
+socket.on('connect_error', (error) => {
+	console.log(error)
+})
 
 class MainBuilding extends Component {
 
