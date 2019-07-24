@@ -1,0 +1,23 @@
+#mainBuilding {
+
+}
+
+
+#mainBuilding .building-border .building-pic {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#mainBuilding .building-border .building-pic img {
+    height: 583px;
+    width: 705px;
+    padding-top: 7px;
+}
+
+#mainBuilding .building-border .building-text {
+    font-size: 11px;
+    text-align: right;
+    margin: 10px 16px;
+    line-height: 22px;
+}
