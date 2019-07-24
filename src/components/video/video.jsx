@@ -6,7 +6,7 @@ class Video extends Component {
 	render() {
 		return (
 			<div id="video">
-				<div className="border">
+				<div className="border top-item">
 					<div className="video-title">
 						<div className="time">
 							יום שלישי, 22.11.2020, 12.37

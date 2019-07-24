@@ -1,5 +1,16 @@
 #mainBuilding {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#mainBuilding .building-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 
@@ -7,12 +18,12 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    height: 100%;
 }
 
 #mainBuilding .building-border .building-pic img {
-    height: 583px;
-    width: 705px;
-    padding-top: 7px;
+    display: flex;
+    height: 100%;
 }
 
 #mainBuilding .building-border .building-text {
