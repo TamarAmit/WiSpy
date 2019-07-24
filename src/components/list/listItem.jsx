@@ -1,5 +1,6 @@
 import React from 'react';
 import VideoPlayer from '../video-player';
+import AudioPlayer from '../audio-player';
 
 import './listItem.css';
 
@@ -70,11 +71,14 @@ class ListItem extends React.Component {
 				</div>
 				<div className="visualizer-image" ref="visualizerImage">
 					<VideoPlayer
-						url="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+						url="http://10.20.20.50:8080/video"
 					/>
 				</div>
 				<div className="sound-image" ref="soundImage">
-					<img src="sound_img.png" />
+					<AudioPlayer
+						uniqueId={Date.now()}
+						url="http://10.20.20.50:8080/audio.wav"
+					/>
 				</div>
 			</div>
 		);
