@@ -1,4 +1,5 @@
 import React from 'react';
+import VideoPlayer from '../video-player';
 
 import './listItem.css';
 
@@ -68,7 +69,9 @@ class ListItem extends React.Component {
 					</div>
 				</div>
 				<div className="visualizer-image" ref="visualizerImage">
-					<img src="visualizer_img.png" />
+					<VideoPlayer
+						url="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+					/>
 				</div>
 				<div className="sound-image" ref="soundImage">
 					<img src="sound_img.png" />
