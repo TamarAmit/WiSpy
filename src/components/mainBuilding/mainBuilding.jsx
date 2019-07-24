@@ -36,8 +36,8 @@ class MainBuilding extends Component {
 		let showHideManClass;
 		let scoreClass
 		if(this.state.manInTheRoomStatus === "visible") {
-			showHideManClass = "manVisible";
-			scoreClass = this.state.score > 50 ? "strongVisible" : "weakVisible";
+			showHideManClass = "manVisible objVisible";
+			scoreClass = this.state.score > 50 ? "strongVisible objVisible" : "weakVisible objVisible";
 		} else {
 			showHideManClass = "manUnvisible";
 			scoreClass = "scoreUnvisible";
@@ -50,7 +50,9 @@ class MainBuilding extends Component {
 					<div className="building-pic">
 						<img src="./mainBuilding.png" />
 					</div>
-					<div id="manInTheRoom" className={showHideManClass + " " + scoreClass}></div>
+					<div id="manInTheRoom" className={showHideManClass}>
+						<div id="score" className={scoreClass} />
+						</div>
 				</div>
 			</div>
 	)}
