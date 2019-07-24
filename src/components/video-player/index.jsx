@@ -24,27 +24,8 @@ const VideoPlayer = ({
 											 onEnablePIP,
 											 onDisablePIP
 										 }) => (
-	<ReactPlayer
-		width={width}
-		height={height}
-		url={url}
-		controls={controls}
-		pip={pip}
-		playing={autoPlay}
-		loop={loop}
-		onReady={onReady}
-		onStart={onStart}
-		onPlay={onPlay}
-		onProgress={onProgress}
-		onDuration={onDuration}
-		onPause={onPause}
-		onBuffer={onBuffer}
-		onBufferEnd={onBufferEnd}
-		onSeek={onSeek}
-		onEnded={onEnded}
-		onError={onError}
-		onEnablePIP={onEnablePIP}
-		onDisablePIP={onDisablePIP}
+	<img
+		src="http://10.20.20.50:8080/video"
 	/>
 );
 
