@@ -54,6 +54,15 @@
     background-position: center;
 }
 
+.sensor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('pictures/icon_man1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .score {
     position: absolute;
     width: 100%;
@@ -81,4 +90,10 @@
 
 .scoreUnvisible{
 
+}
+
+.wifi-image {
+    position: relative;
+    width: 50px;
+    height: 50px;
 }

@@ -16,6 +16,12 @@ socket.on('error', (error) => {
 	console.log(error);
 });
 
+const WifiTransmitterImage = ({ top, left }) => {
+	return (
+			<div className={`sensor`} style={{top, left}}/>
+	)
+}
+
 class MainBuilding extends Component {
 
 	constructor(props) {
@@ -64,6 +70,9 @@ class MainBuilding extends Component {
 					<div className="building-pic">
 						<img src="./mainBuilding.png"/>
 					</div>
+					<WifiTransmitterImage left={'65px'} top={'240px'}/>
+					<WifiTransmitterImage left={'200px'} top={'205px'}/>
+					<WifiTransmitterImage left={'-164px'} top={'205px'}/>
 					<div className={`indication-wrapper ${indications}`}>
 						<div id="manInTheRoom" className={`man`}/>
 						<div id="score" className={`score ${scoreClass}`}/>
