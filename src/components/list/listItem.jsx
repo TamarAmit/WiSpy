@@ -39,7 +39,7 @@ class ListItem extends React.Component {
 	}
 
 	contextMenuItemClick() {
-		console.log("Tamar is the BEST!!!");
+		console.log("bla bla");
 	}
 
 	render() {

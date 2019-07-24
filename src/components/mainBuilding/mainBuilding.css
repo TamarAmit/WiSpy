@@ -21,3 +21,29 @@
     margin: 10px 16px;
     line-height: 22px;
 }
+
+.manVisible {
+    display: block;
+    position: absolute;
+    background-image: url('pictures/icon_man2.png');
+    top: 180px;
+    right: 380px;
+}
+
+.manUnvisible{
+    display: none;
+}
+
+.strongVisible {
+    background-image: url('pictures/yelloRing.png');
+    display: block;
+}
+
+.weakVisible{
+    background-image: url('pictures/greenRing.png');
+    display: block;
+}
+
+.scoreUnvisible{
+
+}
