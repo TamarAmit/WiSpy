@@ -4,8 +4,8 @@ import io from 'socket.io-client';
 
 const socket = io('http://10.20.20.114:3030');
 
-socket.on('broadcast', (data) => {
-	console.log(data)
+socket.on('message', (data) => {
+	console.log(data.msg)
 });
 
 socket.on('connect_error', (error) => {
