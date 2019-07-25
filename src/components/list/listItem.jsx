@@ -53,8 +53,8 @@ class ListItem extends React.Component {
 							<img src="icon_phoner.png" className="icon-list" />
 						</div>
 						<div className="list-item-phone-icons">
-							<img src="icon_listen.png" className="icon-list" onClick={this.openVisualizer} />
-							<img src="icon_camera.png" className="icon-list" onClick={this.openSound} />
+							<img src="icon_listen.png" className="icon-list" onClick={this.openSound} />
+							<img src="icon_camera.png" className="icon-list" onClick={this.openVisualizer} />
 						</div>
 					</div>
 					<div className="list-item-plus" onClick={this.openContextMenu} />
