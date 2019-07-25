@@ -34,41 +34,66 @@
     line-height: 22px;
 }
 
-.manVisible {
-    background-image: url('pictures/icon_man2.png');
-    top: 400px;
+
+.indication-wrapper {
+    position: absolute;
+    top: 300px;
     right: 380px;
     width: 168px;
     height: 168px;
-    display: block;
+    transition: all .3s ease;
+    opacity: 1;
+}
+
+.man {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('pictures/icon_man2.png');
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
-.objVisible {
-    display: block;
+.sensor {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('pictures/icon_man1.png');
     background-repeat: no-repeat;
     background-position: center;
-    width: 168px;
-    height: 168px;
-    top:-8px
 }
 
-.manUnvisible{
-    display: none;
+.score {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -10px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.strongVisible {
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.yellow {
     background-image: url('pictures/yelloRing.png');
 }
 
-.weakVisible{
+.green {
     background-image: url('pictures/greenRing.png');
 }
 
 .scoreUnvisible{
 
+}
+
+.wifi-image {
+    position: relative;
+    width: 50px;
+    height: 50px;
 }
