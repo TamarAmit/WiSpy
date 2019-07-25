@@ -58,7 +58,7 @@ class MainBuilding extends Component {
 			scoreClass = this.state.score > 50 ? "green" : "yellow";
 		} else {
 			indications = "hide";
-			scoreClass = "scoreUnvisible";
+			scoreClass = "";
 		}
 
 		return (
